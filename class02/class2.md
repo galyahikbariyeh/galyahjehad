@@ -7,3 +7,10 @@ And we got to know the tags in it.
 [back](../README.md)
 We learned how to create a link to our project through github
 in addition,we learned how to create form using html
+
+[back](../README.md)
+we learned how to create a table using html
+in addition to some table properties
+like make style for the table using tag style
+also,we learned how to use tag div for seprate the pages.
+
