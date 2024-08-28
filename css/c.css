@@ -1,0 +1,52 @@
+/* .group1{
+    color: red;
+}
+.group2{
+    color: blueviolet;
+}
+div{
+    background-color: aqua;
+}
+#update{
+    color:gold;
+}
+
+table, th, td {
+  border: 1px solid red;
+  border-collapse: collapse;
+  
+} */
+ #navList{
+    list-style: none;
+ }
+ #navList li{
+    display: inline-block;
+    margin-right: 180px;
+ }
+
+ /* #navList img{
+    margin-top: 10px;
+  width: 100px;
+  border-radius:20px;
+ } */
+  #navBar img{
+    display: inline;
+    margin-top: 50px;
+    width: 100px;
+    border-radius: 50px;
+  }
+ #navBar {
+    background-color: aqua;
+    border-radius: 20px;
+ }
+ #navList button{
+background-color: blueviolet;
+color: black;
+width: 100px;
+height: 50px;
+border-radius: 50px;
+
+ }
+ #navList button:hover{
+    background-color: brown;
+ }
