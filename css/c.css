@@ -16,19 +16,20 @@ table, th, td {
   border-collapse: collapse;
   
 } */
- #navList{
+  /* #navList{
     list-style: none;
- }
+ } */
  #navList li{
     display: inline-block;
-    margin-right: 180px;
+    margin-right: 80px;
+    border-radius: 50px;
  }
 
  /* #navList img{
     margin-top: 10px;
   width: 100px;
   border-radius:20px;
- } */
+ } 
   #navBar img{
     display: inline;
     margin-top: 50px;
@@ -48,5 +49,60 @@ border-radius: 50px;
 
  }
  #navList button:hover{
-    background-color: brown;
+    background-color: yellow;
+ } */
+
+ #navList{
+   display: inline-flex;
  }
+ #navBar{
+   background-color: greenyellow;
+   border-radius: 20px;
+ }
+ #navBar  img{
+   display:inline;
+   border-radius: 100px;
+   width: 100px;
+   margin-left: 100px;
+   
+   margin-top: 40px;
+ }
+ #navList img{
+border-radius: 50px;
+
+ }
+#navList button{
+   background-color: blueviolet;
+   border-radius: 30px;
+height: 50px;
+width: 50px;
+ 
+}
+#navBar button:hover{
+   background-color: blue;
+}
+
+#footer{
+   position: absolute;
+   bottom: 0px;
+   width:100%;
+   height:100px ;
+   border-radius: 20px;
+   background-color: greenyellow;
+}
+#footer h1{
+   text-align: center;
+}
+
+#content{
+   text-align: center;
+}
+.item{
+   background-color: burlywood;
+   width: 500px;
+   border-radius: 10px;
+}
+
+.item img:hover{
+   width:120%;
+}
