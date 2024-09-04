@@ -14,3 +14,13 @@ in addition to some table properties
 like make style for the table using tag style
 also,we learned how to use tag div for seprate the pages.
 
+[back](../README.md)
+we strarted with css
+also we learned the properties of the page
+like navBar and navList
+
+[back](../README.md)
+we learnd how to divide the page
+using footer
+
+
