@@ -6,5 +6,6 @@
 |3|html|[click here](./class02/class2.md)|
 |4|html|[click here](./class02/class2.md)|
 |5|html|[click here](./class02/class2.md)|
+|6|html|[click here](./class02/class2.md)|
 
  

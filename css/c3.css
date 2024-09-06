@@ -1,0 +1,111 @@
+#content1{
+    text-align: center;
+    display: grid;
+   
+    grid-template-columns: auto auto auto;
+grid-template-areas: 
+'A B C'
+'D E F'
+'G H I';
+background-color:grey;
+border-color: black;
+width: 300px;
+margin-top: 20px;
+}
+
+#A{border-bottom: 20px;
+    grid-area: A;
+    background-color: aqua;
+    width: 50px;
+    height: 55px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+#B{  background-color: rgb(158, 14, 100);
+    width: 50px;
+    height: 50px;
+    grid-area: B;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#C{ margin-top: 10px;
+      background-color: forestgreen;
+    width: 50px;
+    height: 50px;
+    grid-area: C;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#D{
+    margin-bottom: 20px;
+    grid-area: D;
+    background-color:red;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 30px;
+}
+#E{
+    grid-area: E;
+    background-color: pink;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#F{
+    grid-area: F;
+    background-color:powderblue;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#G{  background-color:white;
+    width: 50px;
+    height: 50px;
+    grid-area: G;
+    border: 1px solid black;
+    border-collapse:collapse;
+    margin-left: 30px;
+  margin-bottom: 10px;
+}
+#H{  background-color: thistle;
+    width: 50px;
+    height: 50px;
+    grid-area: H;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+  
+}
+
+#I{
+    background-color: floralwhite;
+    width: 50px;
+    height: 50px;
+    grid-area: I;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#navBar {
+    color: blueviolet;
+    background-color: aquamarine;
+    width: 400px;
+    text-align: center;
+    height: 50px;
+}
+#navList {
+    list-style: none;
+}

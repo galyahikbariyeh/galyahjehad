@@ -23,4 +23,8 @@ like navBar and navList
 we learnd how to divide the page
 using footer
 
+[back](../README.md)
+we learned how to make grid using html+css
+
+
 
