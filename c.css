@@ -1,0 +1,67 @@
+#grid{
+display:grid;
+grid-template-areas:
+'navBar navBar navBar navBar navBar navBar '
+'button button content content content content'
+'footer footer footer footer footer footer'
+ ;
+ text-align: center;
+
+
+
+}
+
+#navBar{
+    grid-area: navBar;
+    background-color: black;
+    color: white;
+}
+
+#button{
+    grid-area: button;
+    background-color:gray;
+  
+}
+#button button{
+    display: block;
+    margin-top: 20px;
+    background-color:gray;
+    margin-left: 50px;
+    block-size:auto;
+    width: 200px;  
+    height: 30px;
+}
+
+#content{
+    grid-area: content;
+    background-color: beige;
+    /* border-radius: 50px; */
+}
+.item{
+    background-color:white;
+    border-radius: 100px;
+    border:1px solid black;
+    margin:20px;
+}
+
+.item img{
+    margin-right: 700px;
+}
+.item h1{
+    margin-right:  700px;
+}
+.item p{
+    margin-right:  700px;
+    color: black;
+   transform: 100px;
+}
+.item p:hover{
+    color: blueviolet;
+}
+
+
+#footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+}
