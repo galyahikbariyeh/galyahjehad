@@ -1,0 +1,46 @@
+#grid1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    'one two two tree'
+    'one four four five'
+    'one six seven eight'
+    ;
+    text-align: center;
+    width: 100%;
+    width: 500px;
+    height: 500px;
+}
+#one{
+    grid-area: one;
+    background-color: aqua;
+}
+#two{
+    grid-area: two;
+    background-color: blueviolet;
+}
+#tree{
+    grid-column: tree;
+    background-color: brown;
+}
+
+#four{
+    grid-area: four;
+    background-color: blue;
+}
+#five{
+    grid-area: five;
+    background-color: green;
+}
+#six{
+    grid-area: six;
+    background-color: burlywood;
+}
+#seven{
+    grid-area: seven;
+    background-color: palevioletred;
+}
+#eight{
+    grid-area: eight;
+    background-color: hotpink;
+}
