@@ -1,0 +1,10 @@
+
+.content button{
+    display: block;
+    margin-top: 20px;
+    background-color:burlywood;
+    margin-left: 50px;
+    block-size:auto;
+    width: 200px;  
+    height: 30px;
+}
