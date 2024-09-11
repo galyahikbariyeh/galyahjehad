@@ -16,13 +16,22 @@ grid-template-areas:
     background-color: black;
     color: white;
 }
+#navBar h1{
+    width: 100%;
+}
+#navBar h1:hover{
+transition: 3s;
+width: 400px;
+}
 
 #button{
     grid-area: button;
     background-color:gray;
+
   
 }
 #button button{
+    width: 50%;
     display: block;
     margin-top: 20px;
     background-color:gray;
@@ -31,7 +40,10 @@ grid-template-areas:
     /* width: 200px;  
     height: 30px; */
 }
-
+#button button:hover{
+    transition: 2s;
+    width: 200px;
+}
 #content{
     grid-area: content;
     background-color: beige;
@@ -46,7 +58,7 @@ grid-template-areas:
 
 .item img{
     margin-right: 700px;
-    width:100%;
+    width:20%;
 }
 /* .image{
     width: 200px;
@@ -58,14 +70,24 @@ grid-template-areas:
 }
 .item h1{
     margin-right:  700px;
+    width: 50%;
+
+}
+.item h1:hover{
+    transition: 3s;
+   
+    width: 400px;
 }
 .item p{
     margin-right:  700px;
     color: black;
    transform: 100px;
+   width: 50%;
 }
 .item p:hover{
+    transition: 3s;
     color: blueviolet;
+    width: 400px;
 }
 
 
@@ -73,6 +95,13 @@ grid-template-areas:
     grid-area: footer;
     background-color: black;
     color: white;
+}
+#footer h1{
+    width: 100%;
+}
+#footer h1:hover{
+transition: 3s;
+width: 400px;
 }
 
 #shape{
@@ -82,7 +111,7 @@ grid-template-areas:
     border-radius: 20px;
 }
 #shape:hover{
-    transition: 3s;
+    transition: 5s;
     width: 100%;
 
 }
