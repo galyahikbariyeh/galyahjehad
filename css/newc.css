@@ -28,8 +28,8 @@ grid-template-areas:
     background-color:gray;
     margin-left: 50px;
     block-size:auto;
-    width: 200px;  
-    height: 30px;
+    /* width: 200px;  
+    height: 30px; */
 }
 
 #content{
@@ -46,6 +46,15 @@ grid-template-areas:
 
 .item img{
     margin-right: 700px;
+    width:100%;
+}
+/* .image{
+    width: 200px;
+} */
+.item img:hover{
+   
+    transition:  width 3s;
+    width: 400px;
 }
 .item h1{
     margin-right:  700px;
@@ -64,4 +73,21 @@ grid-template-areas:
     grid-area: footer;
     background-color: black;
     color: white;
+}
+
+#shape{
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 20px;
+}
+#shape:hover{
+    transition: 3s;
+    width: 100%;
+
+}
+#bar{
+    width: 100%;
+    border: 1px solid blue;
+    border-radius: 50px;
 }
