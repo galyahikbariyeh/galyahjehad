@@ -1,4 +1,4 @@
-
+/* 
 .content button{
     display: block;
     margin-top: 20px;
@@ -7,4 +7,76 @@
     block-size:auto;
     width: 200px;  
     height: 30px;
+} */
+#navBar{
+    background-color: aqua;
+    /* border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px; */
+
+}
+#gridMain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.hoverImage:hover{
+    width: 400px;
+    border: 3px solid red;
+}
+.navList {
+    list-style:none ;
+    display: inline-flex;
+   
+}
+.navList li{
+    display: inline-block;
+    margin-right: 80px;
+  
+    /* margin-bottom :80px; */
+  
+   
+}
+#navBar img{
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 30px;
+    width: 100px;
+    margin-right: 300px;
+}
+.navButton{
+    background-color:wheat;
+    border-radius: 20px;
+    /* display: inline-block; */
+    color: blueviolet;
+   
+}
+@media screen and (max-width:600px) {
+   #gridMain{
+   
+    grid-template-columns: auto auto;
+   }
+   .hoverImage{
+    width: 100%;
+    /* margin-left:20px; */
+    
+    
+   }
+   /* #navBar{
+    /* width: 105%; 
+    margin-top: 100px;
+
+    padding: 30px;
+   } */
+  .navList li{
+    margin-left: 50%;
+    width: 100%;
+ margin-right: 15%;
+
+
+   
+  }
+  
+   #navBar img{
+    margin-left: 44%;
+   }
 }
