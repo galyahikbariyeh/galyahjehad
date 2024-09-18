@@ -10,5 +10,13 @@ table, th, td {
     color: blue;
     text-decoration: solid;
   }
-  
+  @media screen and (max-width:600px) {
+    body{
+      background-color: aqua;
+
+    }
+    table, th, td{
+      width:900px;
+    }
+  }
  
