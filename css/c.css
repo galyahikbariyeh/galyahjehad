@@ -74,9 +74,9 @@ border-radius: 50px;
  }
 #navList button{
    background-color: blueviolet;
-   border-radius: 30px;
-height: 50px;
-width: 50px;
+   border-radius: 20px;
+height: 20px;
+width: 40px;
  
 }
 #navBar button:hover{
@@ -125,7 +125,7 @@ width: 50px;
 #item4{
    grid-area: item4;
    width: 100%;
-   background-color: burlywood;
+   background-color: red;
    height: 200px;
 }
 #item5{
@@ -133,6 +133,46 @@ width: 50px;
    width: 100%;
    background-color: rebeccapurple;
    height: 200px;
+}
+@media screen and (max-width:1024px){
+   body{
+      background-color: peru;
+   }
+}
+@media screen and (max-width:700px) {
+   body{
+      background-color: aqua;
+   }
+}
+@media screen and (max-width:500px) {
+   body{
+      background-color: burlywood;
+   }
+   
+ #content{
+   text-align: center;
+   display: grid;
+   grid-template-columns: auto auto auto; 
+   grid-template-areas:
+   'item1 item1 item1 item1 item1'
+   'item2 item3 item3 item3 item4'
+   'item5 item5 item5 item5 item5';
+}
+#item1{
+   grid-area: item1;
+   width: 80%;
+ 
+  
+}
+#navList button{
+   background-color: blueviolet;
+   border-radius: 20px;
+height: 20px;
+width: 40px;
+margin-right: 100%;
+ 
+}
+
 }
 
 /* .item{

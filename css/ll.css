@@ -8,6 +8,9 @@
    
   
 }
+body{
+  background-color: blueviolet;
+}
 #navBar img{
     border-radius: 50px;
     margin-left: 20px;
@@ -119,6 +122,47 @@ margin-left:  10px;
 
    
 }
+/* desktop */
+@media screen and (max-width:1024px) {
+  body{
+    background-color: aqua;
+  }
+}@media screen and (max-width:700px) {
+  body{
+      background-color:tomato;
+  }
+ 
+  
+}
+
+@media screen and (max-width:500px) {
+  body{
+      background-color:red;
+  }
+  #content{
+    text-align: center;
+    /* display:grid; */
+    grid-template-columns: auto auto   ; 
+  grid-template-areas: 
+    'item1 '
+    'item2'
+    'item3'
+    'item4';
+    
+    
+    
+   
+    
+    
+}
+  
+}
+
+
+
+
+
+
 /* 
 #content{
     text-align: center;

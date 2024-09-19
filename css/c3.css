@@ -4,6 +4,7 @@
    
     grid-template-columns: auto auto auto;
 grid-template-areas: 
+'navBar navBar navBar'
 'A B C'
 'D E F'
 'G H I';
@@ -100,6 +101,7 @@ margin-top: 20px;
 }
 
 #navBar {
+    grid-area: navBar;
     color: blueviolet;
     background-color: aquamarine;
     width: 400px;
