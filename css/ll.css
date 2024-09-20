@@ -139,23 +139,20 @@ margin-left:  10px;
   body{
       background-color:red;
   }
-  #content{
-    text-align: center;
-    /* display:grid; */
-    grid-template-columns: auto auto   ; 
-  grid-template-areas: 
-    'item1 '
-    'item2'
-    'item3'
-    'item4';
-    
-    
-    
-   
-    
-    
+  #item1 {
+    margin-right: 500px;
+    grid-area: item1;
+    width: 30%;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
+#item1 img {
   
+  width: 30%;
+  height: 20%;
+  border-radius: 20px;
+  margin-right: 500px;
+}
 }
 
 
