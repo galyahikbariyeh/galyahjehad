@@ -152,26 +152,44 @@ width: 40px;
  #content{
    text-align: center;
    display: grid;
-   grid-template-columns: auto auto auto; 
+   grid-template-columns: auto auto; 
    grid-template-areas:
    'item1 item1 item1 item1 item1'
    'item2 item3 item3 item3 item4'
    'item5 item5 item5 item5 item5';
+  
 }
 #item1{
    grid-area: item1;
-   width: 80%;
- 
+   width: 100%;
+ border-radius:none ;
+ margin-bottom: 10px;
   
 }
 #navList button{
    background-color: blueviolet;
    border-radius: 20px;
-height: 20px;
-width: 40px;
-margin-right: 100%;
+font-size: small;
+
  
 }
+#navList{
+   text-align: center;
+}
+#navList li{
+   display: inline-block;
+ margin: 0px 6px;
+ 
+}
+#navBar  img{
+   margin-left: 100px;
+   margin-right: 100px;
+   border-radius: 100px;
+   width: 100px;
+  
+
+   margin-top: 40px;
+ }
 
 }
 
