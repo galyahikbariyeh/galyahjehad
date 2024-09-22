@@ -48,3 +48,8 @@ if(age2==='25'){
 else{
     console.log('this is false condition')
 }
+
+// var name= 'galyah'
+// console.log( 'name is',name)
+var arr=['1','2','5']
+console.log(arr)
