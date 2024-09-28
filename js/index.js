@@ -59,5 +59,68 @@ alert('welcome')
 var name3='galyah'
 console.log(name3)
 
+var uList=document.getElementById('navList')
+console.log('searh by id',uList)
 
+var uList2=document.getElementsByClassName('ulList')
+console.log('searh by class',uList2[0])
 
+var h1=document.getElementsByTagName('h1')[0]
+console.log('h1 tag',h1)
+// h1.innerHTML="this is from js"
+// h1.innerText="this is from js"
+// h1.style.color="blue"
+// h1.style.backgroundColor="yellow"
+
+var body=document.getElementsByTagName('body')[0]
+//argument value passed to the function like color
+function changeBG(color){
+    body.style.backgroundColor=color
+}
+// function changeBGBlue(){
+//     body.style.backgroundColor="blue"
+// }
+// function changeBGBlack(){
+//     body.style.backgroundColor="black"
+// }
+// function changeBGYellow(){
+//     body.style.backgroundColor="yellow"
+// }
+// function changeBGGreen(){  
+//     body.style.backgroundColor="green"
+// }
+//chang the text when click
+var changed =false
+function change(){
+    
+    // var h1=document.getElementsByTagName('h1')[0]
+    // console.log(h1)
+    // h1.innerHTML="new click h1"
+    // console.log(h1)
+    //way 1
+    // if(changed==false){
+       
+    //     h1.innerHTML="new click h1"
+    //     changed=true
+    // }
+    // else{
+      
+    //     h1.innerHTML="new page" 
+    //     changed =false
+    // }
+
+    //way 2
+    if(h1.innerHTML == "new page"){
+        h1.innerText="new click h1"
+    }
+else{
+     h1.innerText="new page"
+}
+    
+
+}
+function fullScreen(){
+    console.log('full screen')
+    screen.requestFullscreen()
+    // document.exitFullscreen
+}
