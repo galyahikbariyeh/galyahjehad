@@ -53,3 +53,11 @@ else{
 // console.log( 'name is',name)
 var arr=['1','2','5']
 console.log(arr)
+
+
+alert('welcome')
+var name3='galyah'
+console.log(name3)
+
+
+
