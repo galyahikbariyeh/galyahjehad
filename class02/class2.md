@@ -35,4 +35,12 @@ and we took the property transition that affecting the elements
 
 
 [back](../README.md)
-responsive
+responsive with mobile and tab and desktop
+[back](../README.md)
+responsive with mobile and tab and desktop 
+and more datails
+[back](../README.md)
+we started learning the basics of js language
+
+[back](../README.md)
+we learned about document and function in js

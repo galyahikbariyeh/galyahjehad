@@ -10,4 +10,8 @@
 |7|html+css|[click here](./class02/class2.md)|
 |8|html+css|[click here](./class02/class2.md)|
 |9|html+css|[click here](./class02/class2.md)|
+|10|html+css|[click here](./class02/class2.md)|
+|11|js|[click here](./class02/class2.md)|
+|12|js|[click here](./class02/class2.md)|
+
  
