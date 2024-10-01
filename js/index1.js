@@ -1,4 +1,4 @@
-alert('hello')
+// alert('hello')
 var ulList=document.getElementById('ulList')
 console.log('by id',ulList)
 var ulList2=document.getElementsByClassName('navList')
@@ -59,3 +59,57 @@ c=false
 // function changeBGGreen(){
 //     body.style.backgroundColor="green"
 // }
+var cont=false
+var contactButton=document.getElementById('contactButton')
+console.log(contactButton)
+contactButton.style.backgroundColor="green"
+// function contact() {
+//     alert('Hello')
+//     contactButton.innerHTML="hi welcome"
+//     contactButton.style.backgroundColor="red"
+//     contactButton.style.width="400px"
+// }
+// 
+// var numberInput1=document.getElementById('numberInput1')
+// var numberInput2=document.getElementById('numberInput2')
+// var operation=document.getElementById('operation')
+// function calculate() {
+// console.log(numberInput1.value)
+// console.log(numberInput2.value)
+// var result=document.getElementById('result')
+// result.innerHTML=parseInt(numberInput1.value)+parseInt(numberInput2.value)
+// if(operation.value==='+')
+// {
+//     result.innerHTML=parseInt(numberInput1.value)+parseInt(numberInput2.value)
+// }
+// else if(operation.value==='-'){
+//     result.innerHTML=parseInt(numberInput1.value)-parseInt(numberInput2.value)
+// }
+// else if(operation.value==='*'){
+//     result.innerHTML=parseInt(numberInput1.value)*parseInt(numberInput2.value)
+// }
+// else if(operation.value==='/'){
+//     result.innerHTML=parseInt(numberInput1.value)/parseInt(numberInput2.value)
+// }
+
+    
+// }
+//task
+
+var result=document.getElementById('result')
+var num=document.getElementById('num')
+function clickButton(num){
+if(num<2){
+
+   console.log(' not prime')}
+for (let i=2;i<num;i++){
+    if(num%i===0){
+        result.innerHTML=parseInt(num.value)
+        console.log('not prime')
+    }
+}
+
+console.log('prime')
+
+}
+
