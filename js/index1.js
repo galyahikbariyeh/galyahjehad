@@ -96,20 +96,57 @@ contactButton.style.backgroundColor="green"
 // }
 //task
 
+// var result=document.getElementById('result')
+// var num=document.getElementById('num')
+// function clickButton(num){
+// if(num<2){
+
+//    console.log(' not prime')}
+// for (let i=2;i<num;i++){
+//     if(num%i===0){
+//         result.innerHTML=parseInt(num.value)
+//         console.log('not prime')
+//     }
+// }
+
+// console.log('prime')
+
+// }
+var form=document.getElementById('form')
+var numberInput1=document.getElementById('numberInput1')
+var numberInput2=document.getElementById('numberInput2')
+form.addEventListener('submit',function(event){
+    event.preventDefault();
+    console.log(numberInput1.value)
+ console.log(numberInput2.value)
+
+
 var result=document.getElementById('result')
-var num=document.getElementById('num')
-function clickButton(num){
-if(num<2){
+console.log(result)
+var operation=document.getElementById('operation')
+console.log(operation)
+// result.innerHTML=parseInt(numberInput1.value)+parseInt(numberInput2.value)
+// var simulation=parseInt(numberInput1.value)+parseInt(numberInput2.value)
 
-   console.log(' not prime')}
-for (let i=2;i<num;i++){
-    if(num%i===0){
-        result.innerHTML=parseInt(num.value)
-        console.log('not prime')
-    }
+switch (operation.value) {
+    case '+':
+        var simulation=parseInt(numberInput1.value)+parseInt(numberInput2.value) 
+        break;
+        case '-':
+            var simulation=parseInt(numberInput1.value)-parseInt(numberInput2.value) 
+            break;
+            case '*':
+                var simulation=parseInt(numberInput1.value)* parseInt(numberInput2.value) 
+                
+                break;
+                case '/':
+                    var simulation=parseInt(numberInput1.value) / parseInt(numberInput2.value) 
+                    break;
+    default:
+        break;
 }
+alert('simulation is:'+simulation)
+console.log( '=',simulation)
+result.innerHTML=simulation
 
-console.log('prime')
-
-}
-
+})
