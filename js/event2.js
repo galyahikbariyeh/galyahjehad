@@ -1,30 +1,30 @@
-var numInput1=document.getElementById('numInput1')
-var numInput2=document.getElementById('numInput2')
-var operation=document.getElementById('operation')
-var result=document.getElementById('result')
-function calculate()  {
-    console.log(numInput1.value)
-    console.log(numInput2.value)
+// var numInput1=document.getElementById('numInput1')
+// var numInput2=document.getElementById('numInput2')
+// var operation=document.getElementById('operation')
+// var result=document.getElementById('result')
+// function calculate()  {
+//     console.log(numInput1.value)
+//     console.log(numInput2.value)
    
-switch (operation.value) {
-    case '+':
-        result.innerText=parseInt(numInput1.value)+parseInt(numInput2.value)
-        break;
+// switch (operation.value) {
+//     case '+':
+//         result.innerText=parseInt(numInput1.value)+parseInt(numInput2.value)
+//         break;
 
-        case '-':
-            result.innerText=parseInt(numInput1.value)-parseInt(numInput2.value)
-            break;
-            case '*':
-                result.innerText=parseInt(numInput1.value)*parseInt(numInput2.value)
-                break;
-                case '/':
-                    result.innerText=parseInt(numInput1.value)/parseInt(numInput2.value)
-                    break;
-    default:
-        break;
-}
+//         case '-':
+//             result.innerText=parseInt(numInput1.value)-parseInt(numInput2.value)
+//             break;
+//             case '*':
+//                 result.innerText=parseInt(numInput1.value)*parseInt(numInput2.value)
+//                 break;
+//                 case '/':
+//                     result.innerText=parseInt(numInput1.value)/parseInt(numInput2.value)
+//                     break;
+//     default:
+//         break;
+// }
     
-}
+// }
 // var result=document.getElementById('result')
 // var isprimenum=document.getElementById('isprimenum')
 
@@ -106,19 +106,78 @@ switch (operation.value) {
    
 // }
 //  }
-var screen=document.getElementById('screen')
-    var c=false
+// var screen=document.getElementById('screen')
+//     var c=false
 
- function fullScreen(){
-    // var screen=document.getElementById('screen')
-    // var c=false
-    if(c==false){
-        screen.requestFullscreen()
-        c=true
+//  function fullScreen(){
+//     var screen=document.getElementById('screen')
+//     var c=false
+//     if(c==false){
+//         screen.requestFullscreen()
+//         c=true
+//     }
+//     else{
+//         document.exitFullscreen()
+//         c=false
+//     }
+//  }
+// var mainH1=document.getElementById('mainH1');
+// mainH1.addEventListener('click',function()
+// {
+ 
+//     mainH1.style.color='red';
+// })
+
+var userForm=document.getElementById('userForm')
+var fname=document.getElementById('fname')
+var lname=document.getElementById('lname')
+var user=document.getElementById('user')
+userForm.addEventListener('submit',function(event){
+    console.log(fname.ariaValueMax,lname.value)
+    event.preventDefault();
+    var firstH1=document.createElement('h1')
+    firstH1.innerText="first name :"+fname.value +"last name :"+lname.value
+    console.log(firstH1)
+    firstH1.style.backgroundColor='pink'
+    user.appendChild(firstH1)
+})
+var number1=document.getElementById('number1')
+    var number2=document.getElementById('number2')
+    var operation=document.getElementById('operation')
+   var result=document.getElementById('result')
+function calculate() {
+    alert('hello ')
+    console.log(number1.value,number2.value)
+    switch (operation.value) {
+        case '+':
+            result.innerHTML=parseInt(number1.value)+parseInt(number2.value)
+            break;
+            case '-':
+                result.innerHTML=parseInt(number1.value)-parseInt(number2.value)
+                break;
+                case '*':
+                    result.innerHTML=parseInt(number1.value)*parseInt(number2.value)
+                    break;
+                    case '/':
+                        result.innerHTML=parseInt(number1.value)/parseInt(number2.value)
+                        break;
+        default:
+            break;
+    }
+    
+}
+var number=document.getElementById('number')
+var result2=document.getElementById('result2')
+
+ function isPrime(){
+for(var i=2;i<parseInt(number.value);i++){
+    console.log(number.value)
+    if(number.value%i==0){
+        result2.innerText=" not prime"
+        break
     }
     else{
-        document.exitFullscreen()
-        c=false
+        result2.innerText=" prime"
     }
+}
  }
-
