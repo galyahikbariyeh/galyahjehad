@@ -13,5 +13,8 @@
 |10|html+css|[click here](./class02/class2.md)|
 |11|js|[click here](./class02/class2.md)|
 |12|js|[click here](./class02/class2.md)|
+|13|js|[click here](./class02/class2.md)|
+|14|js|[click here](./class02/class2.md)|
+|15|js|[click here](./class02/class2.md)|
 
  
