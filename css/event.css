@@ -1,0 +1,13 @@
+.btn-outline-success{   
+     width: 400px;
+     /* background-color: aqua; */
+}
+.btn-outline-success:hover{   
+    background-color: blue;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: brown;
+}
+.navbar-brand{
+    color: bisque;
+}
