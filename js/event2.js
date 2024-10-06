@@ -128,56 +128,91 @@
 //     mainH1.style.color='red';
 // })
 
-var userForm=document.getElementById('userForm')
-var fname=document.getElementById('fname')
-var lname=document.getElementById('lname')
-var user=document.getElementById('user')
-userForm.addEventListener('submit',function(event){
-    console.log(fname.ariaValueMax,lname.value)
-    event.preventDefault();
-    var firstH1=document.createElement('h1')
-    firstH1.innerText="first name :"+fname.value +"last name :"+lname.value
-    console.log(firstH1)
-    firstH1.style.backgroundColor='pink'
-    user.appendChild(firstH1)
-})
-var number1=document.getElementById('number1')
-    var number2=document.getElementById('number2')
-    var operation=document.getElementById('operation')
-   var result=document.getElementById('result')
-function calculate() {
-    alert('hello ')
-    console.log(number1.value,number2.value)
-    switch (operation.value) {
-        case '+':
-            result.innerHTML=parseInt(number1.value)+parseInt(number2.value)
-            break;
-            case '-':
-                result.innerHTML=parseInt(number1.value)-parseInt(number2.value)
-                break;
-                case '*':
-                    result.innerHTML=parseInt(number1.value)*parseInt(number2.value)
-                    break;
-                    case '/':
-                        result.innerHTML=parseInt(number1.value)/parseInt(number2.value)
-                        break;
-        default:
-            break;
-    }
+// var userForm=document.getElementById('userForm')
+// var fname=document.getElementById('fname')
+// var lname=document.getElementById('lname')
+// var user=document.getElementById('user')
+// userForm.addEventListener('submit',function(event){
+//     console.log(fname.ariaValueMax,lname.value)
+//     event.preventDefault();
+//     var firstH1=document.createElement('h1')
+//     firstH1.innerText="first name :"+fname.value +"last name :"+lname.value
+//     console.log(firstH1)
+//     firstH1.style.backgroundColor='pink'
+//     user.appendChild(firstH1)
+// })
+// var number1=document.getElementById('number1')
+//     var number2=document.getElementById('number2')
+//     var operation=document.getElementById('operation')
+//    var result=document.getElementById('result')
+// function calculate() {
+//     alert('hello ')
+//     console.log(number1.value,number2.value)
+//     switch (operation.value) {
+//         case '+':
+//             result.innerHTML=parseInt(number1.value)+parseInt(number2.value)
+//             break;
+//             case '-':
+//                 result.innerHTML=parseInt(number1.value)-parseInt(number2.value)
+//                 break;
+//                 case '*':
+//                     result.innerHTML=parseInt(number1.value)*parseInt(number2.value)
+//                     break;
+//                     case '/':
+//                         result.innerHTML=parseInt(number1.value)/parseInt(number2.value)
+//                         break;
+//         default:
+//             break;
+//     }
     
-}
-var number=document.getElementById('number')
-var result2=document.getElementById('result2')
+// }
+// var number=document.getElementById('number')
+// var result2=document.getElementById('result2')
 
- function isPrime(){
-for(var i=2;i<parseInt(number.value);i++){
-    console.log(number.value)
-    if(number.value%i==0){
-        result2.innerText=" not prime"
-        break
-    }
-    else{
-        result2.innerText=" prime"
-    }
+//  function isPrime(){
+// for(var i=2;i<parseInt(number.value);i++){
+//     console.log(number.value)
+//     if(number.value%i==0){
+//         result2.innerText=" not prime"
+//         break
+//     }
+//     else{
+//         result2.innerText=" prime"
+//     }
+// }
+//  }
+var userForm=document.getElementById('userForm')
+console.log(userForm)
+var userName=document.getElementById('form3Example1cg')
+var email=document.getElementById('form3Example3cg')
+var password=document.getElementById('form3Example4cg')
+var confirmPass=document.getElementById('form3Example4cdg')
+var allUsers= JSON.parse(localStorage.getItem('userData'))||[]
+var result=document.getElementById('result')
+userForm.addEventListener('submit',function (event){
+event.preventDefault()
+console.log(userName.value)
+console.log(email.value)
+console.log(password.value)
+console.log(confirmPass.value)
+if(document.userForm.password.value==""){
+    document.getElementById("result").innerHTML="enter user pass"
+    return false
 }
- }
+else if(document.userForm.password.value!==document.userForm.confirmPass.value){
+    document.getElementById("result").innerHTML="enter user not cpass"
+    return false
+}
+
+var userData=
+{userName:userName.value,email:email.value,password:password.value,confirmPass:confirmPass.value}
+console.log(allUsers)
+//json
+allUsers.push(userData)
+localStorage.setItem('userData',JSON.stringify(allUsers))
+
+})
+
+//object
+//{key:value}
+

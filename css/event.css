@@ -11,3 +11,24 @@
 .navbar-brand{
     color: bisque;
 }
+.me-2{
+    background-color: bisque;
+}
+.me-2:hover{
+    background-color: palevioletred;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: red;
+}
+.navbar-light .navbar-brand {
+    background-color: aqua;
+    color: blue;
+}
+.navbar{
+    width: 500px;}
+/* li{
+    display:inline-block;
+} */
+.navbar-nav{
+    margin-left: 20px;
+}
