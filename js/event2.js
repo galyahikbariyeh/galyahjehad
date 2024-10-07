@@ -195,15 +195,17 @@ console.log(userName.value)
 console.log(email.value)
 console.log(password.value)
 console.log(confirmPass.value)
-if(document.userForm.password.value==""){
-    document.getElementById("result").innerHTML="enter user pass"
-    return false
+for(var i=0;i<allUsers.length;i++){
+    if(confirmPass.value==password.value){
+        console.log('correct')
+        alert('login passed')
+    }
+    else{
+        console.log(' not correct') 
+        alert('login failed')
+       
+    }
 }
-else if(document.userForm.password.value!==document.userForm.confirmPass.value){
-    document.getElementById("result").innerHTML="enter user not cpass"
-    return false
-}
-
 var userData=
 {userName:userName.value,email:email.value,password:password.value,confirmPass:confirmPass.value}
 console.log(allUsers)
