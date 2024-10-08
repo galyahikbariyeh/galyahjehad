@@ -3,37 +3,54 @@ var userForm=document.getElementById('userForm')
 console.log(userForm)
 var userName=document.getElementById('form3Example1c')
 var email=document.getElementById('form3Example3c')
-var password=document.getElementById('form3Example4c')
-var confirmPass=document.getElementById('form3Example4cd')
-var allUsers=JSON.parse(localStorage.getItem('userData'))||[]
+var Password=document.getElementById('form3Example4c')
+var ConfirmPass=document.getElementById('form3Example4cd')
+var allusers=JSON.parse(localStorage.getItem('userData'))||[]
+// let isLoginForm=true
 
 userForm.addEventListener('submit',function (event){
     event.preventDefault();
     console.log(userName.value)
     console.log(email.value)
-    console.log(password.value)
-    console.log(confirmPass.value)
+    console.log(Password.value)
+    console.log(ConfirmPass.value)
     var userData={
         userName:userName.value,
         email:email.value,
-        password:password.value,
-        confirmPass:confirmPass.value
+        Password:Password.value,
+        ConfirmPass:ConfirmPass.value
 
 
     }
-    for(var i=0;i<password.length;i++){
-        if(confirmPass.value==password.value){
-            console.log('correct')
+    // if (isLoginForm) {
+    //     // Simulate login validation
+    //     console.log(`Logging in with Email: ${email}, Password: ${Password}`);
+    //     alert('Login Successful');
+    //     isLoginForm=false
+    // } else {
+    //     // Check if passwords match
+    //     if (Password!== ConfirmPass) {
+    //         errorMessage.style.display = 'block';
+    //     } else {
+    //         errorMessage.style.display = 'none';
+    //         // Simulate registration
+    //         console.log(`Registering with Email: ${email}, Password: ${Password}`);
+    //         alert('Registration Successful');
+    //     }
+    // }
+    for(var i=0;i<allusers.length;i++){
+        if(ConfirmPass.value==Password.value){
+            console.log('correct',Password.value,ConfirmPass.value)
             alert('login passed')
 
         }
         else{
-            console.log(' not correct') 
+            console.log(' not correct',Password.value,ConfirmPass.value) 
            alert('login failid')
         }
     }
-    console.log(allUsers)
-   allUsers.push(userData)
-    localStorage.setItem('userData',JSON.stringify(allUsers))
+    console.log(allusers)
+    allusers.push(userData)
+    localStorage.setItem('userData',JSON.stringify(allusers))
 })
 
