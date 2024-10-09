@@ -1,29 +1,29 @@
 var registrationForm=document.getElementById('registrationForm')
-var Email=document.getElementById('form2Example1')
-var Password=document.getElementById('form2Example2')
-var allU=JSON.parse(localStorage.getItem('DataU')) || []
+var email=document.getElementById('form2Example1')
+var password=document.getElementById('form2Example2')
+var allUsers=JSON.parse(localStorage.getItem('userData')) || []
 registrationForm.addEventListener('submit',function(event){
     event.preventDefault();
-    console.log(Email.value)
-    console.log(Password.value)
-    var DataU={
-        Email:Email.value,
-        Password:Password.value
-    }
-    for(var i=0;i<allU.length;i++){
-        if(allU[i].Email==Email.value && allU[i].Password==Password.value){
-            console.log('exist')
-            alert('login passed')
-            Window.location.href='index2.html'
-        
-        }
-        else{
-            console.log(' not exist') 
-            alert('login failed')
+    var userFound=false
+    console.log(email.value)
+    console.log(password.value)
+    for(var i=0;i<allUsers.length;i++){
+        if(allUsers[i].email===email.value && allUsers[i].password===password.value){
+          userFound=true
+           
         }
     }
-    console.log(allU)
-    allU.push(DataU)
-    localStorage.setItem('DataU',JSON.stringify(allU))
+    if(userFound){
+        // alert('login sussfull')
+        swal("Good job!", "You clicked the button!", "success");
+
+        window.location.href='gal.html'
+    }
+    else{
+        swal("Hello world!");
+
+        // alert('invalid')
+    }
+   
 })
  
