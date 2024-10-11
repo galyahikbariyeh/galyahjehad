@@ -38,17 +38,17 @@ userForm.addEventListener('submit',function (event){
     //         alert('Registration Successful');
     //     }
     // }
-    for(var i=0;i<allusers.length;i++){
-        if(ConfirmPass.value==Password.value){
-            console.log('correct',Password.value,ConfirmPass.value)
-            alert('login passed')
+    // for(var i=0;i<allusers.length;i++){
+    //     if(ConfirmPass.value==Password.value){
+    //         console.log('correct',Password.value,ConfirmPass.value)
+    //         alert('login passed')
 
-        }
-        else{
-            console.log(' not correct',Password.value,ConfirmPass.value) 
-           alert('login failid')
-        }
-    }
+    //     }
+    //     else{
+    //         console.log(' not correct',Password.value,ConfirmPass.value) 
+    //        alert('login failid')
+    //     }
+    // }
     console.log(allusers)
     allusers.push(userData)
     localStorage.setItem('userData',JSON.stringify(allusers))

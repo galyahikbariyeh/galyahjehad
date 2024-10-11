@@ -31,10 +31,11 @@ width: 400px;
   
 }
 #button button{
+   
     width: 50%;
     display: block;
     margin-top: 20px;
-    background-color:gray;
+    background-color:rgb(233, 40, 10);
     margin-left: 50px;
     block-size:auto;
     /* width: 200px;  
@@ -50,7 +51,7 @@ width: 400px;
     /* border-radius: 50px; */
 }
 .item{
-    background-color:white;
+    box-shadow: 5px 5px 15px 15px rgba(0,0,0,0.702);
     border-radius: 200px;
     border:1px solid black;
     margin:20px;
@@ -68,6 +69,7 @@ width: 400px;
     transition:  width 3s;
     width: 400px;
 }
+
 .item h1{
     margin-right:  700px;
     width: 50%;
@@ -92,6 +94,7 @@ width: 400px;
 
 
 #footer{
+   
     grid-area: footer;
     background-color: black;
     color: white;

@@ -195,17 +195,17 @@ console.log(userName.value)
 console.log(email.value)
 console.log(password.value)
 console.log(confirmPass.value)
-for(var i=0;i<allUsers.length;i++){
-    if(confirmPass.value==password.value){
-        console.log('correct')
-        alert('login passed')
-    }
-    else{
-        console.log(' not correct') 
-        alert('login failed')
+// for(var i=0;i<allUsers.length;i++){
+//     if(confirmPass.value==password.value){
+//         console.log('correct')
+//         alert('login passed')
+//     }
+//     else{
+//         console.log(' not correct') 
+//         alert('login failed')
        
-    }
-}
+//     }
+// }
 var userData=
 {userName:userName.value,email:email.value,password:password.value,confirmPass:confirmPass.value}
 console.log(allUsers)
