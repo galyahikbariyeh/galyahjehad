@@ -8,40 +8,40 @@ registrationForm.addEventListener('submit',function(event){
     console.log(email.value)
     console.log(password.value)
    // way 2
-   for(var i=0;i<allUsers.length;i++){
-    if(allUsers[i].email === email.value && allUsers[i].password === password.value){
-        console.log('succfull')
-        alert('good')
+//    for(var i=0;i<allUsers.length;i++){
+//     if(allUsers[i].email === email.value && allUsers[i].password === password.value){
+//         console.log('succfull')
+//         alert('good')
         
-   }
+//    }
 
-   else{
-    console.log('invalid')
-    alert('error')
+//    else{
+//     console.log('invalid')
+//     alert('error')
     
-   }
-}
+//    }
+// }
 
 ////معتمد
 
 
-    // for(var i=0;i<allUsers.length;i++){
-    //     if(allUsers[i].email===email.value && allUsers[i].password===password.value){
-    //       userFound=true
+    for(var i=0;i<allUsers.length;i++){
+        if(allUsers[i].email===email.value && allUsers[i].password===password.value){
+          userFound=true
            
-    //     }
-    // }
-    // if(userFound){
-    //     // alert('login sussfull')
-    //     swal("Good job!", "You clicked the button!", "success");
+        }
+    }
+    if(userFound){
+        // alert('login sussfull')
+        swal("Good job!", "You clicked the button!", "success");
 
-    //     window.location.href='gal.html'
-    // }
-    // else{
-    //     swal("Hello world!");
+        window.location.href='gal.html'
+    }
+    else{
+        swal("Hello world!");
 
-    //     // alert('invalid')
-    // }
+        // alert('invalid')
+    }
    
 })
  

@@ -19,5 +19,5 @@ secondH2.onclick=function(){
 secondH2.onclick=function(){
    document.dir='rtl'
     secondH2.innerHTML='الى اللقاء' 
-   
+}
 
