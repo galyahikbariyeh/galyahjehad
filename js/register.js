@@ -53,4 +53,33 @@ userForm.addEventListener('submit',function (event){
     allusers.push(userData)
     localStorage.setItem('userData',JSON.stringify(allusers))
 })
+//لما انا اضيف onclick
+function LogData(){
+    console.log('ij am function')
+}
+
+// onclickلما الجافا تضيفهل
+var logD=document.getElementById('Log')
+logD.onclick=function(){
+    LogData()
+}
+var title=document.getElementById('title')
+var lang=localStorage.getItem('lang')||'eng'
+changlang(lang)
+function changlang(lang){
+    console.log('change language',lang)
+    
+
+if(lang==='eng'){
+    title.innerText="this is english"
+    localStorage.setItem('lang',lang)
+    document.dir='ltr'
+}
+else if(lang==='ar'){
+     title.innerText="هذخ الللغة العربية"
+     localStorage.setItem('lang',lang)
+     document.dir='rtl'
+}
+}
+
 

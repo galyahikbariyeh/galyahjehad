@@ -1,0 +1,12 @@
+#Log{
+    width: 100%;
+    box-sizing: content-box;
+    border: solid black 2px;
+    padding: 5px;
+}
+#LInew{
+    width: 50%;
+}
+#title{
+    transform: translate(50%,50%);
+}
