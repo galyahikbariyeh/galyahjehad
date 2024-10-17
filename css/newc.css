@@ -35,7 +35,7 @@ width: 400px;
     width: 50%;
     display: block;
     margin-top: 20px;
-    background-color:rgb(233, 40, 10);
+    background-color:rgb(233, 40, 10,.5);
     margin-left: 50px;
     block-size:auto;
     /* width: 200px;  
